@@ -12,10 +12,10 @@ class team (sport): #sport collectif
 	def __str__(self) :
 		return("This is a team sport of " +str(self.nbr_p)+ " players per team, and you play it " +str(self.place)+".")
 
-#On teste un objet dans la sous-classe team :	
-volley=team("ball", "parquet", "yes")
-volley.attribute(6,"inside")
-print(volley)
+# #On teste un objet dans la sous-classe team :
+# volley=team("ball", "parquet", "yes")
+# volley.attribute(6,"inside")
+# print(volley)
 
 
 class solo (sport): #sport individuel
@@ -26,7 +26,7 @@ class solo (sport): #sport individuel
 	def __str__(self) :
 		return ("You can start this solo sport at " +str(self.beginner_age)+ ". Is it sensationnal ? " +str(self.sensationnal)+ ".")
 
-#On teste un objet dans la sous-classe solo
-horseriding=solo("horse", "arena", "yes")
-horseriding.attribute("Sometimes yes", 6)
-print(horseriding)
+# #On teste un objet dans la sous-classe solo
+# horseriding=solo("horse", "arena", "yes")
+# horseriding.attribute("Sometimes yes", 6)
+# print(horseriding)
