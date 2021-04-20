@@ -15,12 +15,12 @@ class TestVehicle(unittest.TestCase):
         honda_civic.attributes(5,"break")
         self.assertEqual(honda_civic.nb_of_places,5)
 
-#this test does not work and I don't know why, there is no Error message
-    #def family_car_is_not_a_sport_car(self):
-       # scenic=car(4,"beige","Renault")
-       # scenic.attributes(5,"family car")
-       # ref=scenic.test_type("sport car")
-       # self.assertIs(ref,"The type does not match")
+
+    def family_car_is_not_a_sport_car(self):
+       scenic=car(4,"beige","Renault")
+       scenic.attributes(5,"family car")
+       bool=scenic.test_type("sport car")
+       self.assertFalse(bool)
 
     def test_scenic_is_a_car(self) :
         scenic = car(4,"beige","Renault")
