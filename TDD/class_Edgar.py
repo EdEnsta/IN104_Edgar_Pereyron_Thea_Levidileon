@@ -21,6 +21,8 @@ class car (vehicle):
 
     def test_type(self, ref):
         if (self.type == ref):
-            return ("The car has a matched type.")
+            #return ("The car has a matched type.")
+            return True
         else:
-            return("The type does not match.")
+            #return("The type does not match.")
+            return False

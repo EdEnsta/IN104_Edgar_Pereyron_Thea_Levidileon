@@ -27,6 +27,6 @@ class solo (sport): #sport individuel
 		return ("You can start this solo sport at " +str(self.beginner_age)+ ". Is it sensationnal ? " +str(self.sensationnal)+ ".")
 
 # #On teste un objet dans la sous-classe solo
-# horseriding=solo("horse", "arena", "yes")
-# horseriding.attribute("Sometimes yes", 6)
-# print(horseriding)
+horseriding=solo("horse", "arena", "yes")
+horseriding.attribute("Sometimes yes", 6)
+print(horseriding)
